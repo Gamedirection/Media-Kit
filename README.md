@@ -4,7 +4,11 @@
 
 ## Usage
 
-Free to use for building or updating any site/material that represents GameDirection or a GameDirection project. See [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md) for the do's/don'ts. For the full visual reference, open [`brand/guide/index.html`](brand/guide/index.html) in a browser.
+Free to use for building or updating any site/material that represents GameDirection or a GameDirection project. See [`LICENSE-ASSETS.md`](LICENSE-ASSETS.md) for the do's/don'ts.
+
+**Live preview:** https://gamedirection.github.io/Media-Kit/
+
+For the full visual reference, open [`brand/guide/index.html`](brand/guide/index.html) in a browser, or use the live preview link above.
 
 ## Structure
 
