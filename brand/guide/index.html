@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>GameDirection Brand Guide</title>
+<style>
+  @font-face {
+    font-family: "Raleway";
+    src: url("../typography/fonts/Raleway-Regular.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("../typography/fonts/Raleway-Medium.ttf") format("truetype");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("../typography/fonts/Raleway-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("../typography/fonts/Raleway-Bold.ttf") format("truetype");
+    font-weight: 700;
+  }
+
+  :root {
+    --bg: #FFFFFF;
+    --surface: #F5F6F7;
+    --text: #000000;
+    --text-muted: #5B5D60;
+    --border: #D1D3D4;
+    --accent: #00ACED;
+    --accent-contrast: #FFFFFF;
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000;
+    --surface: #141414;
+    --text: #FFFFFF;
+    --text-muted: #A6A8AB;
+    --border: #2A2C2F;
+    --accent: #00ACED;
+    --accent-contrast: #000000;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000;
+      --surface: #141414;
+      --text: #FFFFFF;
+      --text-muted: #A6A8AB;
+      --border: #2A2C2F;
+      --accent-contrast: #000000;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Raleway", sans-serif;
+    transition: background .2s ease, color .2s ease;
+  }
+  body { overflow-x: hidden; }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 24px 96px;
+  }
+  header.page {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 24px;
+    background: color-mix(in srgb, var(--bg) 85%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+  header.page .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  header.page img { height: 28px; width: auto; display: block; }
+
+  button#theme-toggle {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.85rem;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  button#theme-toggle:hover { border-color: var(--accent); }
+
+  h1 { font-size: 2.4rem; font-weight: 700; margin: 40px 0 8px; }
+  h2 { font-size: 1.5rem; font-weight: 700; margin: 56px 0 4px; }
+  h2 .accent-dot {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-right: 10px;
+  }
+  p.lead { color: var(--text-muted); font-size: 1.05rem; max-width: 640px; }
+  section > p.desc { color: var(--text-muted); margin-top: -4px; margin-bottom: 20px; max-width: 640px; }
+
+  .grid { display: grid; gap: 16px; }
+  .grid.colors { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .swatch {
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .swatch .fill { height: 88px; }
+  .swatch .label { padding: 10px 14px; font-size: 0.85rem; }
+  .swatch .label strong { display: block; font-size: 0.9rem; }
+  .swatch .label span { color: var(--text-muted); font-family: monospace; }
+
+  .mode-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 640px) { .mode-panels { grid-template-columns: 1fr; } }
+  .mode-panel {
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    padding: 24px;
+  }
+  .mode-panel.light-demo { background: #FFFFFF; color: #000000; }
+  .mode-panel.dark-demo { background: #000000; color: #FFFFFF; }
+  .mode-panel h3 { margin: 0 0 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: .06em; }
+  .mode-panel .card {
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  .light-demo .card { background: #F5F6F7; border: 1px solid #D1D3D4; }
+  .dark-demo .card { background: #141414; border: 1px solid #2A2C2F; }
+  .mode-panel .muted { font-size: 0.85rem; }
+  .light-demo .muted { color: #5B5D60; }
+  .dark-demo .muted { color: #A6A8AB; }
+
+  .type-specimen .row { display: flex; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .type-specimen .row:last-child { border-bottom: none; }
+  .type-specimen .tag { width: 130px; flex-shrink: 0; color: var(--text-muted); font-size: 0.8rem; font-family: monospace; }
+  .w400 { font-weight: 400; }
+  .w500 { font-weight: 500; }
+  .w600 { font-weight: 600; }
+  .w700 { font-weight: 700; }
+
+  .btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 16px 0; }
+  .btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 12px 22px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+  }
+  .btn.primary { background: var(--accent); color: #FFFFFF; }
+  .btn.secondary { background: transparent; color: var(--text); border: 1px solid var(--border); }
+  .btn.wrong { background: var(--accent); color: #FFFFFF; border-radius: 4px; }
+
+  .avatar-row { display: flex; gap: 16px; align-items: center; }
+  .avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); }
+
+  .dodont { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 640px) { .dodont { grid-template-columns: 1fr; } }
+  .dodont .col { border-radius: 16px; padding: 20px; border: 1px solid var(--border); background: var(--surface); }
+  .dodont .col.do { border-color: var(--accent); }
+  .dodont h3 { margin-top: 0; font-size: 0.95rem; }
+  .dodont ul { margin: 0; padding-left: 20px; font-size: 0.9rem; color: var(--text-muted); }
+  .dodont li { margin-bottom: 8px; }
+
+  .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; }
+  .logo-card { border-radius: 16px; border: 1px solid var(--border); padding: 16px; text-align: center; background: var(--surface); }
+  .logo-card.on-black { background: #000000; }
+  .logo-card.on-white { background: #FFFFFF; }
+  .logo-card img { max-width: 100%; height: 64px; object-fit: contain; }
+  .logo-card .cap { margin-top: 10px; font-size: 0.75rem; color: var(--text-muted); }
+
+  footer.page { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.85rem; }
+  code { font-family: monospace; background: var(--surface); padding: 2px 6px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<header class="page">
+  <div class="brand">
+    <img src="../logo/icon/gamedirection-icon.png" alt="" />
+    GameDirection Brand Guide
+  </div>
+  <button id="theme-toggle" type="button">Toggle theme</button>
+</header>
+
+<main>
+  <h1>GameDirection</h1>
+  <p class="lead">Public brand kit — colors, type, logo, and shape rules for building GameDirection-branded sites and materials. See <code>brand-guidelines.md</code> for the full written rules this page visualizes.</p>
+
+  <h2><span class="accent-dot"></span>Color</h2>
+  <p class="desc">Sampled directly from the official logo files — not invented.</p>
+  <div class="grid colors">
+    <div class="swatch"><div class="fill" style="background:#00ACED"></div><div class="label"><strong>GameDirection Blue</strong><span>#00ACED</span></div></div>
+    <div class="swatch"><div class="fill" style="background:#000000"></div><div class="label"><strong>Black</strong><span>#000000</span></div></div>
+    <div class="swatch"><div class="fill" style="background:#FFFFFF;border-bottom:1px solid var(--border)"></div><div class="label"><strong>White</strong><span>#FFFFFF</span></div></div>
+    <div class="swatch"><div class="fill" style="background:#A6A8AB"></div><div class="label"><strong>Neutral Gray</strong><span>#A6A8AB</span></div></div>
+    <div class="swatch"><div class="fill" style="background:#D1D3D4"></div><div class="label"><strong>Light Gray</strong><span>#D1D3D4</span></div></div>
+  </div>
+
+  <h2><span class="accent-dot"></span>Light Mode / Dark Mode</h2>
+  <p class="desc">Both schemes side by side — this is how the same UI should look in each mode.</p>
+  <div class="mode-panels">
+    <div class="mode-panel light-demo">
+      <h3>Light</h3>
+      <div class="card">
+        <strong>Card title</strong>
+        <p class="muted">Muted supporting text sits at #5B5D60 on white.</p>
+      </div>
+      <button class="btn primary" style="background:#00ACED;color:#fff">Primary Action</button>
+    </div>
+    <div class="mode-panel dark-demo">
+      <h3>Dark</h3>
+      <div class="card">
+        <strong>Card title</strong>
+        <p class="muted">Muted supporting text sits at #A6A8AB on black.</p>
+      </div>
+      <button class="btn primary" style="background:#00ACED;color:#fff">Primary Action</button>
+    </div>
+  </div>
+
+  <h2><span class="accent-dot"></span>Typography</h2>
+  <p class="desc">Raleway, the only typeface found in official source material.</p>
+  <div class="type-specimen">
+    <div class="row"><span class="tag">H1 / 700</span><span class="w700" style="font-size:2.2rem">Memorable Player Experiences</span></div>
+    <div class="row"><span class="tag">H2 / 700</span><span class="w700" style="font-size:1.6rem">Accessible by Design</span></div>
+    <div class="row"><span class="tag">H3 / 600</span><span class="w600" style="font-size:1.2rem">Built for Neurodivergent Players</span></div>
+    <div class="row"><span class="tag">Body / 400</span><span class="w400" style="font-size:1rem">GameDirection is a game studio focused on memorable player experiences.</span></div>
+    <div class="row"><span class="tag">Medium / 500</span><span class="w500" style="font-size:1rem">Used for emphasis and nav labels.</span></div>
+  </div>
+
+  <h2><span class="accent-dot"></span>Shape &amp; Buttons</h2>
+  <p class="desc">The logo is built from circles — UI should follow that language: rounded, never sharp.</p>
+  <div class="btn-row">
+    <button class="btn primary">Primary Button</button>
+    <button class="btn secondary">Secondary Button</button>
+  </div>
+  <div class="avatar-row">
+    <img class="avatar" src="../../company/team-alex.png" alt="Team avatar example" />
+    <span class="muted" style="color:var(--text-muted);font-size:0.9rem">Avatars: always circular</span>
+  </div>
+
+  <h2><span class="accent-dot"></span>Logo Usage</h2>
+  <div class="logo-grid">
+    <div class="logo-card on-white"><img src="../logo/primary/gamedirection-logo-full.png" alt="Full color logo" /><div class="cap">Full color — on white</div></div>
+    <div class="logo-card on-black"><img src="../logo/reverse/gamedirection-white-on-black.png" alt="White on black logo" /><div class="cap">Reverse — on black</div></div>
+    <div class="logo-card on-white"><img src="../logo/icon/gamedirection-icon.png" alt="Icon mark" /><div class="cap">Icon-only mark</div></div>
+  </div>
+
+  <h2><span class="accent-dot"></span>Do / Don't</h2>
+  <div class="dodont">
+    <div class="col do">
+      <h3>Do</h3>
+      <ul>
+        <li>Use brand blue #00ACED as the only accent color</li>
+        <li>Keep buttons, cards, and inputs rounded</li>
+        <li>Use Raleway for all brand-facing text</li>
+        <li>Give the logo clearspace equal to its own height</li>
+      </ul>
+    </div>
+    <div class="col dont">
+      <h3>Don't</h3>
+      <ul>
+        <li>Recolor the logo mark off-brand</li>
+        <li>Use sharp, unrounded corners</li>
+        <li>Mix in a second display typeface</li>
+        <li>Place small blue text directly on white — use it for large text, icons, or filled buttons only</li>
+      </ul>
+      <div class="btn-row" style="margin-top:12px">
+        <button class="btn wrong">Wrong: sharp corners</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page">
+    GameDirection Media Kit — see <code>README.md</code> at the repo root for full contents, licensing, and how to add new projects.
+  </footer>
+</main>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var stored = localStorage.getItem('gd-brand-theme');
+    if (stored) root.setAttribute('data-theme', stored);
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('gd-brand-theme', next);
+    });
+  })();
+</script>
+</body>
+</html>
