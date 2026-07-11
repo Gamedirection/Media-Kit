@@ -17,4 +17,4 @@ The studio's goal is to become self-sustaining so it can support artists and col
 
 ## What We've Done
 
-See [`../projects/`](../projects/) for individual case studies — Snack Attack, Emberwind, Exceed, Project Nightmare, and current work in progress.
+See [`../projects/`](../projects/) for individual case studies - Snack Attack, Emberwind, Exceed, Project Nightmare, and current work in progress.

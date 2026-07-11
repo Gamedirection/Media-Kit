@@ -2,7 +2,7 @@
 
 | Name | Role | Photo |
 |---|---|---|
-| Alex Sierputowski | Founder — Lead Game Designer & Graphic Designer | `team-alex.png` |
+| Alex Sierputowski | Founder - Lead Game Designer & Graphic Designer | `team-alex.png` |
 | Jojo | *Role TBD* | `team-jojo.jpg` |
 | Lindsey | *Role TBD* | `team-lindsey.png` |
 

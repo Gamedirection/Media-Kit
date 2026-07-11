@@ -11,4 +11,4 @@ A GameDirection-published tabletop game, funded via Kickstarter. GameDirection l
 
 ## Assets
 
-- `hero.png` — hero/banner art for site use
+- `hero.png` - hero/banner art for site use

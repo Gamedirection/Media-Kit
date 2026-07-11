@@ -1,6 +1,6 @@
 # GameDirection Media Kit
 
-**Authored by GameDirection.** Public brand kit — everything needed to add GameDirection's branding to a website: colors, type, logo files, usage rules, company info, project case studies, and testimonials.
+**Authored by GameDirection.** Public brand kit - everything needed to add GameDirection's branding to a website: colors, type, logo files, usage rules, company info, project case studies, and testimonials.
 
 ## Usage
 
@@ -18,7 +18,7 @@ company/
   about.md       who GameDirection is, mission, focus
   team.md        team photos/roles
   testimonials.md
-projects/        one folder per project (modular — copy _template/ to add a new one)
+projects/        one folder per project (modular - copy _template/ to add a new one)
 assets/          background graphic + press banners
 ```
 
@@ -31,4 +31,4 @@ assets/          background graphic + press banners
 
 ## Adding a New Project
 
-Copy `projects/_template/` to `projects/<project-slug>/`, fill in the README, drop in a `hero.png`. That's the whole process — this repo is set up to grow.
+Copy `projects/_template/` to `projects/<project-slug>/`, fill in the README, drop in a `hero.png`. That's the whole process - this repo is set up to grow.

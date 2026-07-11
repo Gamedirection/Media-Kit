@@ -11,4 +11,4 @@ GameDirection served as lead graphic designer for Nomnivore Games' Emberwind, co
 
 ## Assets
 
-- `hero.png` — hero/banner art for site use
+- `hero.png` - hero/banner art for site use

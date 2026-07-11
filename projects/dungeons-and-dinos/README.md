@@ -11,4 +11,4 @@ Currently in development. Details to be filled in as the project is finalized fo
 
 ## Assets
 
-- `hero.png` — hero/banner art for site use
+- `hero.png` - hero/banner art for site use

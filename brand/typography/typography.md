@@ -6,13 +6,13 @@ The only typeface found across all GameDirection brand/press-kit source material
 
 Files included in `fonts/`:
 
-- `Raleway-Regular.ttf` — body text
-- `Raleway-Medium.ttf` — emphasis, nav labels
-- `Raleway-SemiBold.ttf` — subheadings, buttons
-- `Raleway-Bold.ttf` — headings
-- `Raleway-Italic.ttf`, `Raleway-SemiBoldItalic.ttf`, `Raleway-BoldItalic.ttf` — emphasis/quotes
+- `Raleway-Regular.ttf` - body text
+- `Raleway-Medium.ttf` - emphasis, nav labels
+- `Raleway-SemiBold.ttf` - subheadings, buttons
+- `Raleway-Bold.ttf` - headings
+- `Raleway-Italic.ttf`, `Raleway-SemiBoldItalic.ttf`, `Raleway-BoldItalic.ttf` - emphasis/quotes
 
-Raleway is licensed under the SIL Open Font License — free to embed and redistribute. ([source](https://fonts.google.com/specimen/Raleway))
+Raleway is licensed under the SIL Open Font License - free to embed and redistribute. ([source](https://fonts.google.com/specimen/Raleway))
 
 ## Web Usage
 
@@ -45,7 +45,7 @@ body { font-family: "Raleway", sans-serif; }
 
 ## Scale (recommended)
 
-No official type scale exists in source material — this is a recommended default, adjust to taste:
+No official type scale exists in source material - this is a recommended default, adjust to taste:
 
 | Role | Size | Weight |
 |---|---|---|

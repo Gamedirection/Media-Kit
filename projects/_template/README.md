@@ -11,7 +11,7 @@ One or two sentences on what the project is.
 
 ## Assets
 
-- `hero.png` — hero/banner art for site use
+- `hero.png` - hero/banner art for site use
 
 ---
 To add a new project: copy this folder to `projects/<project-slug>/`, fill in the fields above, and add a `hero.png` if art is available.

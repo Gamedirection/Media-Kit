@@ -4,20 +4,20 @@ For the visual version of this document, open [`index.html`](index.html) in a br
 
 ## Logo
 
-- Primary mark: `brand/logo/primary/gamedirection-logo.svg` (also `.png`) — full color, blue mark.
-- Reverse variants: `brand/logo/reverse/` — white-on-black, black-on-white, and blue-on-transparent, for use on dark or light backgrounds.
-- Icon/favicon: `brand/logo/icon/` — icon-only mark plus a full favicon set (16x16 up to 512x512, plus `.ico`).
-- Motif: `brand/logo/motif/` — the mark is built from circular/orbiting parts (center dot, exterior circle, directional arrows). This circular language is the source for the rounded-corner rule below — it's not an arbitrary UI choice, it's an extension of the mark itself.
+- Primary mark: `brand/logo/primary/gamedirection-logo.svg` (also `.png`) - full color, blue mark.
+- Reverse variants: `brand/logo/reverse/` - white-on-black, black-on-white, and blue-on-transparent, for use on dark or light backgrounds.
+- Icon/favicon: `brand/logo/icon/` - icon-only mark plus a full favicon set (16x16 up to 512x512, plus `.ico`).
+- Motif: `brand/logo/motif/` - the mark is built from circular/orbiting parts (center dot, exterior circle, directional arrows). This circular language is the source for the rounded-corner rule below - it's not an arbitrary UI choice, it's an extension of the mark itself.
 
 ### Clearspace & Minimum Size
 
-- Keep clearspace around the logo equal to at least the height of the circular mark on all sides — don't let text or other graphics enter that zone.
+- Keep clearspace around the logo equal to at least the height of the circular mark on all sides - don't let text or other graphics enter that zone.
 - Don't scale the full logo below ~120px wide for web use; below that, use the icon-only mark instead.
 
 ### Color Rules
 
 - The mark appears in brand blue (`#00ACED`), pure white, or pure black only. See `brand/colors/palette.md`.
-- On dark/black backgrounds, use the white or blue reverse variant — never place a low-contrast color combination.
+- On dark/black backgrounds, use the white or blue reverse variant - never place a low-contrast color combination.
 - On light/white backgrounds, use the full-color or black mark.
 
 ## Don't (Logo)
@@ -26,7 +26,7 @@ For the visual version of this document, open [`index.html`](index.html) in a br
 - Don't stretch, skew, or rotate the logo.
 - Don't add drop shadows, outlines, or gradients beyond what ships in the source files.
 - Don't place the mark on busy photographic backgrounds without a solid-color safe area behind it.
-- Don't recreate or approximate the mark — always use the provided files.
+- Don't recreate or approximate the mark - always use the provided files.
 
 ## Color
 
@@ -40,7 +40,7 @@ See [`../typography/typography.md`](../typography/typography.md). Typeface is Ra
 
 Because the mark itself is built from circles, UI built around the GameDirection brand should favor **rounded corners and circular accents** over sharp, squared-off edges.
 
-Recommended defaults (no official spec exists — these are sensible defaults derived from the logo, adjust as needed):
+Recommended defaults (no official spec exists - these are sensible defaults derived from the logo, adjust as needed):
 
 | Element | Radius |
 |---|---|
@@ -59,11 +59,11 @@ Recommended defaults (no official spec exists — these are sensible defaults de
 ## Don't (UI)
 
 - Don't use sharp, unrounded corners on buttons, cards, or inputs.
-- Don't introduce a second accent color — blue is the only accent.
+- Don't introduce a second accent color - blue is the only accent.
 - Don't use a serif or monospace typeface anywhere in the brand surface.
-- Don't set brand-blue text at small sizes directly on white (contrast is borderline — see palette notes); use it for large text, icons, or filled buttons instead.
+- Don't set brand-blue text at small sizes directly on white (contrast is borderline - see palette notes); use it for large text, icons, or filled buttons instead.
 
 ## Photography / Imagery Style
 
-- Project hero art (see `projects/*/hero.png`) is illustrated/stylized, not photographic — favor illustrated game art over generic stock photography when representing GameDirection projects.
+- Project hero art (see `projects/*/hero.png`) is illustrated/stylized, not photographic - favor illustrated game art over generic stock photography when representing GameDirection projects.
 - Team photography may be photographic (see `company/team.md`).
