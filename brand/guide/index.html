@@ -191,6 +191,24 @@
 
   footer.page { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.85rem; }
   code { font-family: monospace; background: var(--surface); padding: 2px 6px; border-radius: 4px; }
+  pre { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; overflow-x: auto; }
+  pre code { background: none; padding: 0; }
+
+  .hero-lockup {
+    display: block;
+    width: 140px;
+    height: auto;
+    background: #000000;
+    padding: 16px 20px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+  }
+  .quicklink-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; margin: 16px 0; }
+  .quicklink-table th, .quicklink-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+  .quicklink-table code { word-break: break-all; }
+  .quicklink-table .chip { display: inline-block; border-radius: 12px; padding: 8px; }
+  .quicklink-table .chip.dark { background: #000000; }
+  .quicklink-table .chip.light { background: #FFFFFF; }
 </style>
 </head>
 <body>
@@ -203,6 +221,7 @@
 </header>
 
 <main>
+  <img class="hero-lockup" src="../logo/lockup/gamedirection-lockup-white.png" alt="GameDirection" />
   <h1>GameDirection</h1>
   <p class="lead">Public brand kit - colors, type, logo, and shape rules for building GameDirection-branded sites and materials. See <code>brand-guidelines.md</code> for the full written rules this page visualizes.</p>
 
@@ -264,6 +283,37 @@
     <div class="logo-card on-black"><img src="../logo/reverse/gamedirection-white-on-black.png" alt="White on black logo" /><div class="cap">Reverse - on black</div></div>
     <div class="logo-card on-white"><img src="../logo/icon/gamedirection-icon.png" alt="Icon mark" /><div class="cap">Icon-only mark</div></div>
   </div>
+
+  <h2><span class="accent-dot"></span>Brand Mark - Quick Link</h2>
+  <p class="desc">Hotlink these straight from GitHub Pages to drop the GameDirection mark into another site.</p>
+  <table class="quicklink-table">
+    <tr>
+      <th>Asset</th>
+      <th>Preview</th>
+      <th>Direct link</th>
+    </tr>
+    <tr>
+      <td>Icon</td>
+      <td><span class="chip dark"><img src="../logo/icon/gamedirection-icon.png" alt="Icon" height="32" /></span></td>
+      <td><code>https://gamedirection.github.io/Media-Kit/brand/logo/icon/gamedirection-icon.png</code></td>
+    </tr>
+    <tr>
+      <td>Icon + name (black)</td>
+      <td><span class="chip light"><img src="../logo/lockup/gamedirection-lockup-black.png" alt="Icon and name, black" width="70" /></span></td>
+      <td><code>https://gamedirection.github.io/Media-Kit/brand/logo/lockup/gamedirection-lockup-black.png</code></td>
+    </tr>
+    <tr>
+      <td>Icon + name (white)</td>
+      <td><span class="chip dark"><img src="../logo/lockup/gamedirection-lockup-white.png" alt="Icon and name, white" width="70" /></span></td>
+      <td><code>https://gamedirection.github.io/Media-Kit/brand/logo/lockup/gamedirection-lockup-white.png</code></td>
+    </tr>
+  </table>
+  <p class="desc">Theme-aware embed (auto-switches with the viewer's light/dark mode):</p>
+  <pre><code>&lt;picture&gt;
+  &lt;source media="(prefers-color-scheme: dark)" srcset="https://gamedirection.github.io/Media-Kit/brand/logo/lockup/gamedirection-lockup-white.png"&gt;
+  &lt;source media="(prefers-color-scheme: light)" srcset="https://gamedirection.github.io/Media-Kit/brand/logo/lockup/gamedirection-lockup-black.png"&gt;
+  &lt;img alt="GameDirection" src="https://gamedirection.github.io/Media-Kit/brand/logo/lockup/gamedirection-lockup-black.png" width="220"&gt;
+&lt;/picture&gt;</code></pre>
 
   <h2><span class="accent-dot"></span>Do / Don't</h2>
   <div class="dodont">
